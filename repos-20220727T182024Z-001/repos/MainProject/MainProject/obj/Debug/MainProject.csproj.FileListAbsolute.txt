@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\MainProject\MainProject\obj\Debug\MainProject.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\MainProject\MainProject\obj\Debug\MainProject.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\MainProject\MainProject\bin\Debug\MainProject.exe.config
+C:\Users\Administrator\source\repos\MainProject\MainProject\bin\Debug\MainProject.exe
+C:\Users\Administrator\source\repos\MainProject\MainProject\bin\Debug\MainProject.pdb
+C:\Users\Administrator\source\repos\MainProject\MainProject\obj\Debug\MainProject.exe
+C:\Users\Administrator\source\repos\MainProject\MainProject\obj\Debug\MainProject.pdb
