@@ -180,10 +180,49 @@ select Reverse(Sname) as RevserseName,UPPER(location) as Locatiion from studentd
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 --11)
-create view order_details AS
-Select p.productid,o.ordernumber,o.orderquantity
-from product p,order2
+create table order1(
+id int primary key,
+orderDate date,
+orderNumber int,
+custId int)
 
+create table orderitem(
+id int primary key,
+orderId int foreign key references order1(id),
+productId int foreign key references product(id),
+unitPrice float,
+Quantity int
+)
+
+create table product(
+id int primary key,
+ProductName varchar(20),
+supId int)
+
+insert into order1 values
+(1,'1776-04-04',234,1),
+(2,'1760-03-14',78,3),
+(3,'1784-05-23',124,2),
+(4,'1790-09-03',65,3)
+
+insert into orderitem values
+(101,1,11,234.56,11),
+(102,2,12,78.50,20),
+(103,3,13,124.00,12),
+(104,4,14,65.50,36)
+
+insert into product values
+(11,'TV',204),
+(12,'Laptop',203),
+(13,'Air Cooler',202),
+(14,'Mobile',201)
+
+CREATE View order_item AS
+select p.ProductName,oi.Quantity, o.OrderNumber
+from order1 o,orderitem oi,product p
+where o.id=oi.orderId and p.id=oi.productId
+
+select * from order_item
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
